@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acompanhar Vendas</title>
+</head>
+<body>
+    <h1>Acompanhamento de Vendas</h1>
+    <h2>Pedidos em Aberto:</h2>
+    <ul>
+        {% for pedido in pedidos_abertos %}
+            <li>Pedido {{ pedido.id }} - Cliente: {{ pedido.cliente.nome_empresa }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Pedidos Entregues:</h2>
+    <ul>
+        {% for pedido in pedidos_entregues %}
+            <li>Pedido {{ pedido.id }} - Cliente: {{ pedido.cliente.nome_empresa }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Pedidos Cancelados:</h2>
+    <ul>
+        {% for pedido in pedidos_cancelados %}
+            <li>Pedido {{ pedido.id }} - Cliente: {{ pedido.cliente.nome_empresa }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

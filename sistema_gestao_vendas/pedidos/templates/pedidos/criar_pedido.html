@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Pedido</title>
+</head>
+<body>
+    <h1>Criar Pedido</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ pedido_form.as_p }}
+        <h3>Itens do Pedido</h3>
+        {{ item_form.as_table }}
+        <input type="submit" value="Criar Pedido">
+    </form>
+</body>
+</html>

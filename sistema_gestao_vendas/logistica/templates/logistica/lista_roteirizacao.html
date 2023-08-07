@@ -1,0 +1,16 @@
+<!-- logistica/templates/logistica/lista_roteirizacao.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Roteirização</title>
+</head>
+<body>
+    <h1>Lista de Roteirização</h1>
+    <ul>
+        {% for roteirizacao in roteirizacoes %}
+            <li>{{ roteirizacao.origem }} - {{ roteirizacao.destino }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- producao/templates/producao/registrar_producao.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Produção</title>
+</head>
+<body>
+    <h1>Registrar Produção</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ producao_form.as_p }}
+        {{ uso_materia_prima_form.as_p }}
+        <input type="submit" value="Registrar Produção">
+    </form>
+</body>
+</html>

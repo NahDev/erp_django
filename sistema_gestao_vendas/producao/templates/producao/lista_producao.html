@@ -1,0 +1,16 @@
+<!-- producao/templates/producao/lista_producao.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Produção</title>
+</head>
+<body>
+    <h1>Lista de Produção</h1>
+    <ul>
+        {% for producao in producoes %}
+            <li>Produção de {{ producao.produto.nome_empresa }} - {{ producao.data_inicio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

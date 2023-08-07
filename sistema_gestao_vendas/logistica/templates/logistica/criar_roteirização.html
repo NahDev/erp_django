@@ -1,0 +1,16 @@
+<!-- logistica/templates/logistica/criar_roteirizacao.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Roteirização</title>
+</head>
+<body>
+    <h1>Criar Roteirização</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Criar Roteirização">
+    </form>
+</body>
+</html>
