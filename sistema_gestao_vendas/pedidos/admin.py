@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+
+from .models import Pedido, ItemPedido, Pagamento
+
+admin.site.register(Pedido)
+admin.site.register(ItemPedido)
+admin.site.register(Pagamento)

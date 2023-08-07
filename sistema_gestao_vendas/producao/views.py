@@ -1,4 +1,3 @@
-# producao/views.py
 
 from django.shortcuts import render, redirect
 from .forms import ProducaoForm, UsoMateriaPrimaForm

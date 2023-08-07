@@ -1,4 +1,3 @@
-# producao/models.py
 
 from django.db import models
 from estoque.models import Produto

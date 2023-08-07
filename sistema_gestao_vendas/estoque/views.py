@@ -1,4 +1,3 @@
-# estoque/views.py
 
 from django.shortcuts import render, redirect
 from .forms import ProdutoForm

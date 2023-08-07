@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Recurso, Contrato, Servico
+
+
+admin.site.register(Recurso)
+admin.site.register(Contrato)
+admin.site.register(Servico)

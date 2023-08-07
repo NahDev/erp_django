@@ -1,4 +1,3 @@
-# pedidos/forms.py
 
 from django import forms
 from .models import Pedido, ItemPedido, Pagamento

@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import MateriasPrimas, Producao, UsoMateriaPrima
 
-# Register your models here.
+
+admin.site.register(MateriasPrimas)
+admin.site.register(Producao)
+admin.site.register(UsoMateriaPrima)

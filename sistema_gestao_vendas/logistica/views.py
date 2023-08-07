@@ -1,4 +1,3 @@
-# logistica/views.py
 
 from django.shortcuts import render, redirect
 from .models import Transporte, Roteirizacao, Rastreamento
@@ -30,6 +29,8 @@ def criar_roteirizacao(request):
         return redirect("lista_roteirizacao")
 
     transportes = Transporte.objects.all()
+    # TODO refatorar linha abaixo de pedidos
+
     pedidos = Pedido.objects.filter(roteirizacao__isnull=True)
 
     return render(

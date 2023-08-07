@@ -12,7 +12,7 @@ def agendar_servico(request):
     else:
         form = ServicoForm()
 
-    return render(request, "servicos/agendar_servico.html", {"form": form})
+    return render(request, "servicos/agendar_servicos.html", {"form": form})
 
 
 def lista_servicos(request):
