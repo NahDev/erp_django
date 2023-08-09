@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import Transporte, Roteirizacao, Rastreamento
+from .models import Veiculo, Trajeto
 
-
-admin.site.register(Transporte)
-admin.site.register(Roteirizacao)
-admin.site.register(Rastreamento)
+admin.site.register(Veiculo)
+admin.site.register(Trajeto)
+# admin.site.register(Rastreamento)

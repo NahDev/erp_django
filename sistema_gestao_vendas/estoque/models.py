@@ -13,7 +13,6 @@ class Produto(models.Model):
     marca = models.CharField(max_length=100)
     quantidade = models.PositiveIntegerField()
     preco = models.DecimalField(max_digits=10, decimal_places=2)
-    dimensao = models.CharField(max_length=100)
     data_entrada = models.DateField()
     previsao_saida = models.DateField()
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT)

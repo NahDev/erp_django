@@ -10,7 +10,6 @@ class ProdutoForm(forms.ModelForm):
             "marca",
             "quantidade",
             "preco",
-            "dimensao",
             "data_entrada",
             "previsao_saida",
             "categoria",
